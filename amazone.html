@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon Careers</title>
+
+<style>
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+/* FULL PAGE FLEX */
+body {
+    background:#f3f3f3;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+
+/* HEADER FLEX */
+header {
+    background:#131921;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 25px;
+    color:white;
+    flex-wrap:wrap;
+    box-shadow:0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* LOGO FIX */
+.logo-img {
+    width:100px;
+    max-width:940px;
+    object-fit:contain;
+    display:block;
+}
+
+/* NAV FLEX */
+nav {
+    display:flex;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+nav a {
+    color:white;
+    text-decoration:none;
+    font-size:15px;
+    position:relative;
+}
+
+/* underline hover */
+nav a::after {
+    content:'';
+    position:absolute;
+    width:0%;
+    height:2px;
+    background:#ff9900;
+    left:0;
+    bottom:-5px;
+    transition:0.3s;
+}
+
+nav a:hover::after {
+    width:100%;
+}
+
+/* HERO */
+.hero {
+    background:linear-gradient(to right,#232f3e,#37475a);
+    color:white;
+    text-align:center;
+    padding:90px 20px;
+    box-shadow: inset 0 0 50px rgba(0,0,0,0.4);
+}
+
+.hero h1 {
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.hero p {
+    font-size:18px;
+    opacity:0.9;
+}
+
+/* SECTION */
+.section {
+    padding:70px 20px;
+    text-align:center;
+}
+
+.section h2 {
+    margin-bottom:30px;
+    font-size:30px;
+}
+
+/* CARDS FLEX */
+.cards {
+    display:flex;
+    justify-content:center;
+    align-items:stretch;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.card {
+    background:white;
+    padding:25px;
+    width:260px;
+    border-radius:12px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.12);
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:translateY(-10px) scale(1.05);
+    box-shadow:0 10px 25px rgba(255,153,0,0.3);
+}
+
+.card h3 {
+    margin-bottom:10px;
+    color:#ff9900;
+}
+
+/* FORM */
+.form-box {
+    background:white;
+    max-width:650px;
+    margin:auto;
+    padding:35px;
+    border-radius:14px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.15);
+}
+
+form {
+    display:flex;
+    flex-direction:column;
+}
+
+input, select, textarea {
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+    transition:0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color:#ff9900;
+    outline:none;
+    box-shadow:0 0 5px rgba(255,153,0,0.5);
+}
+
+textarea {
+    min-height:90px;
+    resize:vertical;
+}
+
+/* BUTTON FLEX */
+.button-group {
+    display:flex;
+    justify-content:space-between;
+    margin-top:10px;
+}
+
+button {
+    padding:12px;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+    font-size:15px;
+    width:48%;
+}
+
+.submit {
+    background:#ff9900;
+    font-weight:bold;
+    color:#111;
+    transition:0.3s;
+}
+
+.submit:hover {
+    background:#ffad33;
+    transform:scale(1.05);
+    box-shadow:0 4px 12px rgba(255,153,0,0.5);
+}
+
+.reset {
+    background:#ddd;
+}
+
+.reset:hover {
+    background:#ccc;
+}
+
+/* THANK YOU */
+#thankyou {
+    display:none;
+    text-align:center;
+    font-size:26px;
+    margin-top:25px;
+    color:#008000;
+    font-weight:bold;
+    animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {opacity:0; transform:translateY(20px);}
+    to {opacity:1; transform:translateY(0);}
+}
+
+/* FOOTER */
+footer {
+    background:#131921;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:auto;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="amazon-rebrand-2025_dezeen_2364_col_1-1-removebg-preview.png"
+     alt="Amazon Logo" class="logo-img">
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Careers</a>
+  <a href="#">Apply</a>
+  <a href="#">Help</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Amazon Employee Registration</h1>
+  <p>Apply now and build your future with one of the world's leading companies.</p>
+</div>
+
+<!-- WHY JOIN -->
+<div class="section">
+  <h2>Why Join Amazon?</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Career Growth</h3>
+      <p>Grow your career with top-level opportunities.</p>
+    </div>
+    <div class="card">
+      <h3>Innovative Work</h3>
+      <p>Work on global projects used by millions.</p>
+    </div>
+    <div class="card">
+      <h3>Great Culture</h3>
+      <p>Collaborate with talented professionals.</p>
+    </div>
+  </div>
+</div>
+
+<!-- BENEFITS -->
+<div class="section">
+  <h2>Employee Benefits</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Health Support</h3>
+      <p>Medical and wellness programs.</p>
+    </div>
+    <div class="card">
+      <h3>Flexible Work</h3>
+      <p>Remote & hybrid working options.</p>
+    </div>
+    <div class="card">
+      <h3>Learning</h3>
+      <p>Training and skill development programs.</p>
+    </div>
+  </div>
+</div>
+
+<!-- FORM -->
+<div class="section">
+  <h2>Apply Now</h2>
+  <div class="form-box">
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="tel" placeholder="Phone Number">
+
+      <select required>
+        <option value="">Select Role</option>
+        <option>Software Developer</option>
+        <option>Data Analyst</option>
+        <option>HR Manager</option>
+        <option>Operations Manager</option>
+      </select>
+
+      <textarea placeholder="Your Skills"></textarea>
+
+      <div class="button-group">
+        <button type="submit" class="submit">Submit</button>
+        <button type="reset" class="reset">Reset</button>
+      </div>
+    </form>
+
+    <div id="thankyou">
+      Thank You 😊<br>
+      Your application has been submitted!
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Amazon Careers Demo Page – For educational purposes only</p>
+</footer>
+
+<script>
+    const thankyou = document.getElementById("thankyou")
+function submitForm(e) {
+  e.preventDefault();
+  document.getElementById("thankyou").style.display = "block";
+  document.getElementById("thankyou").scrollIntoView({ behavior: "smooth", block: "center" });
+}
+document.getElementsByClassName("reset")[0].addEventListener("click",(e)=>thankyou.innerText = '')
+</script>
+
+</body>
+</html>
